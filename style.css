@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+
+    justify-content: center;
+
+    align-content: center;
+}
+
+#coluna {
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+}

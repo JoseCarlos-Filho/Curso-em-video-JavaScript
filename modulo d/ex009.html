@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o seu país</title>
+</head>
+<body>
+    <h1>País de Origem</h1>
+    <h2>O seu país é : </h2> <input type="text" name="pais" id="pais_id">
+    <input type="button" value="Verificar" onclick="mostarPais()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function mostarPais() {
+            var paisOrigem = document.querySelector('input#pais_id');
+            var res = document.querySelector('div#res');
+            var respPais = paisOrigem.value;
+            res.innerHTML = `<p>Seu país de origem é : <strong>${paisOrigem.value}</strong></p>`;
+            
+
+            if (respPais == 'Brasil'){
+                res.innerHTML += `<p>Seu pais é <strong>${respPais}<strong>. Você é Brasileiro!!!</p>`
+            }else {
+                res.innerHTML += `<p>Seu país é <strong>${respPais}</strong>. Você é Estrangeiro!!! </p>`
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

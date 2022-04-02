@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt "Lucida Console", Verdana;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        // precedência aritmética
+        // soma dos valores atribuido na variável 'a'.
+        var a = 5 + 3;
+        // resto da divisão dos valores 'a' e 5 atribuido na variável 'b'.
+        var b = a % 5;
+        // potência dos valores 'b' e 2 depois a multiplicação 
+        // do valor 5 atribuido na variável 'c'.
+        var c = 5 * b ** 2;
+        // divisão dos valores 'a' e 2 depois a subtração 
+        // do valor 10 atribuido na variável 'd'.
+        var d = 10 - a / 2;
+        // multiplicação dos valores 6 e 2 depois a divisão 
+        // do valor 'd' atribuido na variável 'e'.
+        var e = 6 * 2 / d;
+        // resto da divisõ dos valores 'b' e 'e' depois a divisão 
+        // do valor 4 e 'e' por ultimo a soma entre os resiltados 
+        // atribuido na variável 'f'.
+        var f = b % e + 4 / e;
+        document.write(`Valor de a : <strong>${a}</strong><br>`)
+        document.write(`Valor de b : <strong>${b}</strong><br>`)
+        document.write(`Valor de c : <strong>${c}</strong><br>`)
+        document.write(`Valor de d : <strong>${d}</strong><br>`)
+        document.write(`Valor de e : <strong>${e}</strong><br>`)
+        document.write(`Valor de f : <strong>${f}</strong><br><br>`)
+
+        // operadores ternários
+        var x = 8
+        var res = x % 2 == 0 ? 5 : 9
+        document.write(`Valor de res : <strong>${res}</strong><br>`)
+
+        var idade = 19
+        var resp = idade >= 18 ? 'Maior' : 'Menor'
+        document.write(`Valor de resp : <strong>${resp}</strong><br>`)
+
+    </script>
+</body>
+
+</html>

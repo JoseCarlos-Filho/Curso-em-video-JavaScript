@@ -1,0 +1,9 @@
+body {
+    background: rgb(68, 125, 199);
+    color: white;
+    font: normal 18pt serif;
+}
+
+h1, p, div{
+    color: white;
+}

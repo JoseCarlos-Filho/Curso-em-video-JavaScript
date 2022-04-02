@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentran</title>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    <h2>Velocidade do carro</h2> <input type="number" name="velocidade" id="vel_id">
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function calcular() {
+            var velo = document.querySelector('input#vel_id');
+            var res = document.querySelector('div#res');
+            var resultadoVel = Number(velo.value);
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${resultadoVel}Km/h</strong></p>`;
+            
+
+            if (resultadoVel > 60){
+                res.innerHTML += `<p>Você está <strong>Multado!!!</strong></p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com sinto de segurança segurança!!!</p>`
+        }
+
+    </script>
+</body>
+</html>
