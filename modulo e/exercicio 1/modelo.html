@@ -7,29 +7,29 @@
 
     <link rel="stylesheet" href="./style.css">
 
-    <title>Verifica a idade JavaScript</title>
+    <title>Contador com passos</title>
 </head>
 <body>
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Contador com passos</h1>
     </header>
     <section>
         <div>
-            <form class="formInput"></form>
+            <form class="formInput">
                 <label for="Inicio">Início : </label>
                 <input type="number" class="firstN">
 
                 <label for="Fim">Fim : </label>
                 <input type="number" class="firstS">
 
-                <label for="Inicio">Início : </label>
-                <input type="number" class="firstN">
+                <label for="Passo">Passo : </label>
+                <input type="number" class="firstP">
 
-
-
+                <input type="button" class="botao" value="Contar" onclick="contar()">
+            </form>
         </div>
-        <div>
-          
+        <div id="res">
+            Preencha os dados acima para ver o resultado
         </div>
     </section>
     <footer>

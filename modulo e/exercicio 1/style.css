@@ -20,19 +20,40 @@ header {
 }
 
 section {
-    /* height: 300px;
-    width: 400px; */
     background-color: white;
 
     border-radius: 15px;
     margin-top: 2em;
     padding: 15px;
+    box-shadow: 5px 5px 50px grey;
 
     display: flex; 
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.formInput input {
+    margin: 5px;
+}
+
+.botao {
+    height: 30px;
+    width: 60px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(133, 223, 248);
+}
+
+#res {
+    margin: 5px;
 }
 
 
