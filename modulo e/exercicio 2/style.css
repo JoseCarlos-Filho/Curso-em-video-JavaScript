@@ -34,13 +34,20 @@ section {
 }
 
 
-p .enterNumber1 .enterNumber2 .enterPasso {
+input {
+
+    margin: 10px;
     display: flex;
-
-
-    /* justify-content: center;
-    align-items: center;*/
+    justify-content: center;
+    
 } 
+
+input::placeholder{
+    border: none;
+    font: 8pt helvetica grey;
+    text-align: center;
+    font-style: italic;
+}
 
 p .botao {
 
@@ -51,10 +58,8 @@ p .botao {
     font-family:  Arial, Helvetica, sans-serif;
     height: 30px;
     width: 60px;
+    margin: 10px;
     background-color: rgb(83, 83, 97);
-
-
-    
 }
 
 
