@@ -1,9 +1,9 @@
-
 function contar() {
+
     let ini = document.querySelector('.enterNumber1').value;
     let fim = document.querySelector('.enterNumber2').value;
     let passo  = document.querySelector('.enterPasso').value;
-    let res = document.getElementById('res');
+    let res = document.getElementById('div#res');
 
     if (ini == 0 || fim == 0 || passo == 0) {
         alert('[ERRO!] Faltando informações!')
