@@ -14,8 +14,10 @@ function adicao(num1 = 0, num2 = 0) {
 
 console.log(adicao(20));
 
+// Variavel que executa uma função
 let v = function(x) {
     return x*2;
 }
 
 console.log(`valor da variavel v : ${v(5)}`);
+
