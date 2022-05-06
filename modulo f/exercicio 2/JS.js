@@ -33,14 +33,41 @@ function adicionar() {
         tabela.appendChild(item);
     } else {
         alert('Valor inválido ou já encontrado na lista.')
-        // tab.innerHTML = '';
-        // for (let i = 1; i <= num; i++) {
-        //     let item = document.createElement('option');
-        //     item.text = `Valor ${num} Adicionado`
-        //     tab.appendChild(item);
-        //     array = num;
-        // }
     }
     num.value = ''
-    num.facus()
+    num.focus();
+}
+
+function finalizar() {
+    if ( lista.length == 0) {
+        alert('Adicione valores antes de finalizar!');
+    } else {
+        let totalElementos = lista.length;
+        res.innerHTML = '';
+        res.innerHTML += `<p>${totalElementos} Elementos cadastrados.</p>`
+        resultadoValores();
+    }
+}
+
+function resultadoValores() {
+    let maior = lista[0];
+    let menor = lista[0];
+    let soma = 0;
+    let media = 0;
+
+    for(let pos in lista) {
+        soma += lista[pos];
+        if (lista[pos] > maior) {
+            maior = lista[pos];
+        }
+        if (lista[pos] < menor) {
+            menor = lista[pos];
+        }
+    }
+    media = soma / lista.length;
+    return(res.innerHTML += `<p>Maior valor da Lista é : ${maior}.</p>`, 
+           res.innerHTML += `<p>Menor valor da Lista é : ${menor}.</p>`,
+           res.innerHTML += `<p>Soma total dos valores da Lista é : ${soma}.</p>`,
+           res.innerHTML += `<p>Média dos valores da Lista é : ${media}.</p>`);
+    
 }

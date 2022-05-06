@@ -21,6 +21,7 @@ header {
 
 section {
     background-color: white;
+    width: 400px;
 
     border-radius: 15px;
     margin-top: 2em;
@@ -31,6 +32,12 @@ section {
     flex-direction: column;
    
 
+}
+
+#seltab {
+    width: 300px;
+    text-align: center;
+    margin-left: 10px;
 }
 
 
@@ -49,15 +56,26 @@ input::placeholder{
     font-style: italic;
 }
 
-p .botao {
-
+p .adicionar {
+    
     border-radius: 15px;
     font-size: 15px;
-    font-weight: bold;
     color: cornsilk;
     font-family:  Arial, Helvetica, sans-serif;
     height: 30px;
-    width: 60px;
+    width: 80px;
+    margin: 10px;
+    background-color: rgb(83, 83, 97);
+}
+
+.finalizar {
+
+    border-radius: 15px;
+    font-size: 15px;
+    color: cornsilk;
+    font-family:  Arial, Helvetica, sans-serif;
+    height: 30px;
+    width: 80px;
     margin: 10px;
     background-color: rgb(83, 83, 97);
 }
