@@ -11,3 +11,8 @@ console.log(typeof num1);
 let numero1 = 10.5789551255547; //number
 console.log(numero1.toFixed(2));
 console.log(numero1.toFixed(4));
+
+// verifica se uma informação passada para a variavel é um inteiro.
+// retornando um valor booleano.
+let valorLiteral = 10 //number
+console.log(Number.isInteger(valorLiteral));
