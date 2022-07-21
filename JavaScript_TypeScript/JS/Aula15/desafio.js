@@ -1,4 +1,4 @@
-let numero = prompt('Digite o numero a ser exibido :');
+let numero = Number(prompt('Digite o numero a ser exibido :'));
 document.body.innerHTML += `Seu número é: ${numero} <br />`;
 document.body.innerHTML += `Raiz quadrada é : ${Math.sqrt(numero)} <br />`;
 document.body.innerHTML += `${numero} é inteiro : ${Number.isInteger(numero)} <br />`;
