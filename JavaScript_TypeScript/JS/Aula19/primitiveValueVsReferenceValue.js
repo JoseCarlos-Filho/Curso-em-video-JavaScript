@@ -1,5 +1,7 @@
 /* 
 Primitivos (imutáveis) - string, number, boolean, undefined, null(bigint, symbol)
+
+Referência (mútavel) - array, object, function - Passados por referência
 */
 
 // exemplo de VALOR imutável neste caso um dado do tipo string
@@ -15,3 +17,18 @@ console.log(a, b);
 
 a = 'Outra coisa'
 console.log(a, b);
+
+// exemplo de valores por referência.
+let c = [1, 2, 3];
+let d = [...c]; // faz uma cópia do array c
+let e = d;
+console.log(c, d);
+
+c.push(4);
+console.log(c, d);
+
+d.pop();
+console.log(c, d);
+
+c.push('Jose');
+console.log(e);
