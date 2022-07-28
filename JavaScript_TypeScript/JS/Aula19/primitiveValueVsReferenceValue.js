@@ -32,3 +32,5 @@ console.log(c, d);
 
 c.push('Jose');
 console.log(e);
+
+console.log(c, d, e);
