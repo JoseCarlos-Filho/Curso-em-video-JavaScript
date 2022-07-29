@@ -34,3 +34,26 @@ c.push('Jose');
 console.log(e);
 
 console.log(c, d, e);
+
+// Referência (mútavel) - array, object, function - Passados por referência
+const arrayObject = {
+    nome: 'José',
+    sobrenome: 'Carlos'
+};
+
+const array = arrayObject;
+
+arrayObject.nome = 'Bastião'; // Alterando o valor do atributo nome do arrayObject;
+console.log(array);
+
+// cópia do arrayA para o arrayB
+const arrayA = {
+    nome: 'José',
+    sobrenome: 'Carlos'
+};
+
+const arrayB = {...arrayA}; // arrayB é uma referência do arrayA
+
+arrayA.nome = 'Bastião'; // somente o arrayA sofre a alteração uma vez que é feito a cópia do arrayA no arrayB.
+console.log(arrayA);
+console.log(arrayB);
