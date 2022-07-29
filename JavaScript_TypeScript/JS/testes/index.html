@@ -12,27 +12,30 @@
 
         <div class="nome">
             <span>Nome:</span>
-            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Nome" id="nomeUser">
         </div>
 
         <div class="sobrenome">
             <span>Sobrenome:</span>
-            <input type="text" placeholder="Sobrenome">
+            <input type="text" placeholder="Sobrenome" id="sobrenomeUser">
         </div>
 
         <div class="peso">
             <span>Peso:</span>
-            <input type="number" placeholder="Peso">
+            <input type="number" placeholder="Peso" id="pesoUser">
         </div>
 
         <div class="altura">
             <span>Altura:</span>
-            <input type="number" placeholder="Altura">
+            <input type="number" placeholder="Altura" id="alturaUser">
         </div>
 
-        <button id="btn-submit" type="submit">Enviar</button>
+        <button id="btn-submit" type="submit" onclick="enviar()">Enviar</button>
 
     </div>
-    
+    <div class="resultado">
+        
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
