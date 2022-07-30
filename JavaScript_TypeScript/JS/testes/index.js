@@ -1,29 +1,38 @@
-const nome = document.querySelector('#nomeUser');
-const sobrenome = document.querySelector('#sobrenomeUser');
-let peso = document.querySelector('#pesoUser');
-let altura = document.querySelector('#alturaUser');
-let resultado = document.querySelector('.resultado');
+function telaPrincipal() {
+    const formulario = document.querySelector('.form');
+    const resultado = document.querySelector('.resultado');
 
+    const pessoas = [];
 
-function enviar() {
-    // console.log(nome.value, sobrenome.value, peso.value, altura.value);
-    let pessoas = [];
+    function eventoForm (evento) {
 
-    const pessoaObjeto = {
-        nome: nome.value, 
-        sobrenome: sobrenome.value,
-        peso: peso.value,
-        altura: altura.value
-    };
+        evento.preventDefault();
 
-    pessoas = pessoaObjeto;
+        const nome = formulario.querySelector('#nomeUser');
+        const sobrenome = formulario.querySelector('#sobrenomeUser');
+        const peso = formulario.querySelector('#pesoUser');
+        const altura = formulario.querySelector('#alturaUser');
 
-    resultado.innerHTML = `<p>
-            ${pessoas.nome}
-            ${pessoas.sobrenome}
-            ${pessoas.peso}
-            ${pessoas.altura}
-        </p>`;
+        pessoas.push ({
+            nome: nome.value, 
+            sobrenome: sobrenome.value,
+            peso: peso.value,
+            altura: altura.value
+        });
 
-    return resultado;
+        console.log(pessoas);
+
+        resultado.innerHTML += `<p>
+                ${nome.value} ${sobrenome.value}` +
+                `${peso.value} ${altura.value}</p>`;
+    }
+
+    formulario.addEventListener('submit', eventoForm);
+
+    // function enviar() {
+    //     // console.log(nome.value, sobrenome.value, peso.value, altura.value);
+    //   return resultado;
+    // };
 }
+
+telaPrincipal();
