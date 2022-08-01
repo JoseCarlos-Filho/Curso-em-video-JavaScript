@@ -20,6 +20,10 @@ function falaOi () {
     return 'Oi';
 }
 
-const vaiExecutar = false;
+const vaiExecutar = 'José';
 
-console.log(!vaiExecutar && falaOi());
+console.log(vaiExecutar && falaOi());
+
+// Operador OU ||
+// retorna o primeira expressão verdadeira no caso 'José'
+console.log(0 || false || null || 'José' || true);
