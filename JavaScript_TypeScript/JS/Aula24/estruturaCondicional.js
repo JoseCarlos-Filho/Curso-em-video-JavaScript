@@ -1,6 +1,7 @@
 // If pode ser usado sozinho
 // Sempre que utilizo a palavra else, preciso de um if antes de
 // Eu posso ter vários else ifs na checagem
+// Podemos usar condições  sem else if, utilizando apenas if e else
 
 
 const data = new Date();
