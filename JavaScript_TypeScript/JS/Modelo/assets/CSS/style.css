@@ -12,8 +12,11 @@
 }
 
 body {
+    font-family: 'Open sans', sans-serif;
+
     margin: 0;
     padding: 0;
+
     background: linear-gradient(to top right, var(--primary-color), var(--secundary-color));
     background-repeat: no-repeat;
 
@@ -24,7 +27,7 @@ body {
 
 .container {
     width: 400px;
-    height: 450px;
+    height: 500px;
 
     margin: 100px 0px 100px 0px;
     padding: 25px;
