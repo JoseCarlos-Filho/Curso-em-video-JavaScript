@@ -29,11 +29,10 @@ body {
 }
 
 .container {
-    width: 600px;
-    height: 500px;
+    width: 450px;
+    height: 550px;
 
-    margin: 100px 0px 100px 0px;
-    padding: 25px;
+    margin: 50px 0px 50px 0px;
 
     border-radius: 10px;
     background: linear-gradient(to bottom, var(--thirdy-color), var(--fourty-color));
@@ -44,11 +43,22 @@ body {
     flex-direction: column;
 }
 
+.master-info {
+    display: flex;
+}
+
+.info-IMC, .info-resultado {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0px 30px 0px 30px;
+}
+
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 10px; 
+   padding: 0px 20px 0px 20px;
 }
 
 label {
