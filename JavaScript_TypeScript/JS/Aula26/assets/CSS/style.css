@@ -30,7 +30,7 @@ body {
 
 .container {
     width: 450px;
-    height: 550px;
+    height: 600px;
 
     margin: 50px 0px 50px 0px;
 
@@ -99,4 +99,8 @@ input:active {
     background: var(--active-color);
     color: var(--active-text-color);
     box-shadow: 8px 8px 20px var(--active-shadow-color);
+}
+
+h1{
+    margin: 25px 0px -5px 0px;
 }
