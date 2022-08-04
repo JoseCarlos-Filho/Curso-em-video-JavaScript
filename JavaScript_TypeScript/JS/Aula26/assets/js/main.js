@@ -5,10 +5,25 @@ function telaPrincipal(){
     function eventoForm (evento) {
         evento.preventDefault();
 
-        const peso = formulario.querySelector('#input-peso');
-        const altura = formulario.querySelector('#input-altura');
-        console.log(peso.value);
-        console.log(altura.value);
+        let peso = parseInt(formulario.querySelector('#input-peso').value);
+        let altura = parseFloat(formulario.querySelector('#input-altura').value);
+        console.log(peso);
+        console.log(altura);
+
+        let IMC = (peso / (altura * altura)).toFixed(1);
+        console.log(IMC);
+
+        
+        
+        if (IMC > 18.5) {
+            resultado.innerHTML = `
+                <span>Abaixo do peso</span>
+            `;
+        } else if (IMC >= 18.5 && IMC < 25) {
+            resultado.innerHTML = `
+                <span>Peso normal</span>
+            `;
+        }
 
     }
 
