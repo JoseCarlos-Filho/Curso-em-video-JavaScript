@@ -31,27 +31,27 @@ function telaPrincipal(){
             // verificação do IMC calculado
             if (IMC < 18.5) {
                 resultado.innerHTML = `
-                    <span>Abaixo do peso</span>
+                    <span>Seu IMC é ${IMC} (Abaixo do peso)</span>
                 `;
             } else if (IMC >= 18.5 && IMC < 25) {
                 resultado.innerHTML = `
-                    <span>Peso normal</span>
+                    <span>Seu IMC é ${IMC} (Peso normal)</span>
                 `;
             }  else if (IMC >= 25 && IMC < 30) {
                 resultado.innerHTML = `
-                    <span>Sobrepeso</span>
+                    <span>Seu IMC é ${IMC} (Sobrepeso)</span>
                 `;
             }  else if (IMC >= 30 && IMC < 35) {
                 resultado.innerHTML = `
-                    <span>Obesidade grau 1</span>
+                    <span>Seu IMC é ${IMC} (Obesidade grau 1)</span>
                 `;
             }  else if (IMC >= 35 && IMC < 40) {
                 resultado.innerHTML = `
-                    <span>Obesidade grau 2</span>
+                    <span>Seu IMC é ${IMC} (Obesidade grau 2)</span>
                 `;
             }  else if (IMC >= 40 && IMC ) {
                 resultado.innerHTML = `
-                    <span>Obesidade grau 3</span>
+                    <span>Seu IMC é ${IMC} (Obesidade grau 3)</span>
                 `;
             } 
 
