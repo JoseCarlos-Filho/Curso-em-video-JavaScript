@@ -3,6 +3,9 @@
     --secundary-color: rgb(82, 83, 85);
     --thirdy-color: rgb(229, 236, 243);
     --fourty-color: rgb(88, 123, 169);
+    --resultado-color: rgb(124, 58, 58);
+    --resultado-bad: rgb(255, 150, 150);
+    --resultado-background-color: rgb(122, 246, 120);
     --shadow: rgb(4, 40, 80);
     --active-text-color: rgb(4, 14, 91);
     --active-color: rgb(244, 245, 250);
@@ -91,4 +94,17 @@ input:active {
 
 h1{
     margin: 25px 0px -5px 0px;
+}
+
+.paragrafo-resultado, .bad {
+    background: var(--resultado-background-color);
+    padding: 5px 90px;
+    
+    color: var(--resultado-color);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.bad {
+    background: var(--resultado-bad);
 }
