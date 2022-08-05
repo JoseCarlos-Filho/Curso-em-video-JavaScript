@@ -1,0 +1,94 @@
+:root {
+    --primary-color: rgb(205, 206, 207);
+    --secundary-color: rgb(82, 83, 85);
+    --thirdy-color: rgb(229, 236, 243);
+    --fourty-color: rgb(88, 123, 169);
+    --shadow: rgb(4, 40, 80);
+    --active-text-color: rgb(4, 14, 91);
+    --active-color: rgb(244, 245, 250);
+    --active-shadow-color: rgb(74, 26, 129);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    background: var(--primary-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 450px;
+    height: 300px;
+
+    margin: 150px 0px 50px 0px;
+
+    border-radius: 10px;
+    background: linear-gradient(to bottom, var(--thirdy-color), var(--fourty-color));
+    box-shadow: 8px 8px 15px var(--shadow);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   padding: 0px 20px 0px 20px;
+}
+
+label {
+    margin: 5px;
+}
+
+button {
+    margin: 20px 0px 0px 0px;
+    border: none;
+    
+    background: var(--primary-color);
+    background: linear-gradient(to top right, var(--primary-color), var(--secundary-color));
+    box-shadow: 8px 8px 20px var(--secundary-color);
+    
+    font-size: 18px;
+    color: var(--primary-color);
+
+    height: 30px;
+    cursor: pointer;
+}
+
+input {
+    font-size: 20px;
+    height: 30px;
+    padding: 0px 20px;
+}
+
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+input:hover {
+    background: var(--fourty-color);
+    cursor: pointer;
+}
+
+input:active {
+    background: var(--active-color);
+    color: var(--active-text-color);
+    box-shadow: 8px 8px 20px var(--active-shadow-color);
+}
+
+h1{
+    margin: 25px 0px -5px 0px;
+}
