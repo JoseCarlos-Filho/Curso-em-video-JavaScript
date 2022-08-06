@@ -10,8 +10,8 @@ form.addEventListener('submit', function(e) {
     const inputPeso = e.target.querySelector('#peso');
     const inputAltura = e.target.querySelector('#altura');
     
-    // console.log(inputPeso.value);
-    // console.log(inputAltura.value);
+    console.log(inputPeso.value);
+    console.log(inputAltura.value);
 
     const peso = Number(inputPeso.value);
     const altura = Number(inputAltura.value);
