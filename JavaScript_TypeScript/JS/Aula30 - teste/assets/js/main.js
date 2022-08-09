@@ -83,10 +83,28 @@ function getMonth (mes) {
         default:
             dayWeekText = '';
     }
-    return dayWeekText;
+    return monthText;
 }
 
 function mountInfoDate() {
-    const spanDayWeek = document.querySelector('.diaSemana');
-    
+    const spanDayWeek = document.querySelector('.diaSemana').value;
+    const spanDay = document.querySelector('.dia').value;
+    const spanMonth = document.querySelector('.mes').value;
+    const spanYear = document.querySelector('.ano').value;
+    const spanHours = document.querySelector('.hora').value;
+    const spanMinutes = document.querySelector('.minutos').value;
+
+    const data = getData();
+    const diaSemana = getDayWeek(data.diaSemana);
+    const diaMes = getMonth(data.mes);
+
+    spanDayWeek.innerHTML = `${data.diaSemana}, `;
+    spanDay.innerHTML = `${data.dia} de`;
+    spanMonth.innerHTML = `${diaMes} de`;
+    spanYear.innerHTML = `${data.ano}`;
+    spanHours.innerHTML = `${data.hora}:`;
+    spanMinutes.innerHTML = `${data.minutos}`;
+
 }
+
+mountInfoDate();
