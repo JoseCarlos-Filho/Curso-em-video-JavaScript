@@ -1,39 +1,26 @@
-function getData () {
-    const data = new Date();
-
-    const diaSemana = data.getDay();
-    const dia = data.getDate();
-    const mes = data.getMonth() + 1;
-    const ano = data.getFullYear();
-    const hora = data.getHours();
-    const minutos = data.getMinutes();
-
-    return diaSemana, dia, mes, ano, hora, minutos;
-}
-
 function getDayWeek (diaSemana) {
     let dayWeekText = '';
     switch (diaSemana) {
         case 0: 
-            dayWeekText = 'Domingo';
+            dayWeekText = 'domingo';
             break;
         case 1: 
-            dayWeekText = 'Domingo';
+            dayWeekText = 'segunda-feira';
             break;
         case 2: 
-            dayWeekText = 'Domingo';
+            dayWeekText = 'terça-feira';
             break;
         case 3: 
-            dayWeekText = 'Domingo';
+            dayWeekText = 'quarta-feira';
             break;
         case 4: 
-            dayWeekText = 'Domingo';
+            dayWeekText = 'quinta-feira';
             break;
         case 5: 
-            dayWeekText = 'Domingo';
+            dayWeekText = 'sexta-feira';
             break;
         case 6: 
-            dayWeekText = 'Domingo';
+            dayWeekText = 'sábado';
             break;
         default:
             dayWeekText = '';
@@ -44,40 +31,40 @@ function getDayWeek (diaSemana) {
 function getMonth (mes) {
     let monthText = '';
     switch (mes) {
-        case 1: 
+        case 0: 
             monthText = 'Janeiro';
             break;
-        case 2: 
+        case 1: 
             monthText = 'Fevereiro';
             break;
-        case 3: 
+        case 2: 
             monthText = 'Março';
             break;
-        case 4: 
+        case 3: 
             monthText = 'Abril';
             break;
-        case 5: 
+        case 4: 
             monthText = 'Maio';
             break;
-        case 6: 
+        case 5: 
             monthText = 'Junho';
             break;
-        case 7: 
+        case 6: 
             monthText = 'Julho';
             break;
-        case 8: 
+        case 7: 
             monthText = 'Agosto';
             break;
-        case 9: 
+        case 8: 
             monthText = 'Setembro';
             break;
-        case 10: 
+        case 9: 
             monthText = 'Outubro';
             break;
-        case 11: 
+        case 10: 
             monthText = 'Novembro';
             break;
-        case 12: 
+        case 11: 
             monthText = 'Dezembro';
             break;
         default:
@@ -86,25 +73,20 @@ function getMonth (mes) {
     return monthText;
 }
 
-function mountInfoDate() {
-    const spanDayWeek = document.querySelector('.diaSemana').value;
-    const spanDay = document.querySelector('.dia').value;
-    const spanMonth = document.querySelector('.mes').value;
-    const spanYear = document.querySelector('.ano').value;
-    const spanHours = document.querySelector('.hora').value;
-    const spanMinutes = document.querySelector('.minutos').value;
+function getData () {
+    const spanCompletDate = document.querySelector('.dataCompleta');
+    const data = new Date();
 
-    const data = getData();
-    const diaSemana = getDayWeek(data.diaSemana);
-    const diaMes = getMonth(data.mes);
+    const dayWeek = data.getDay();
+    const monthDay = data.getMonth();
 
-    spanDayWeek.innerHTML = `${data.diaSemana}, `;
-    spanDay.innerHTML = `${data.dia} de`;
-    spanMonth.innerHTML = `${diaMes} de`;
-    spanYear.innerHTML = `${data.ano}`;
-    spanHours.innerHTML = `${data.hora}:`;
-    spanMinutes.innerHTML = `${data.minutos}`;
 
+    console.log(getDayWeek(dayWeek), getMonth(monthDay));
+
+    spanCompletDate.innerHTML = `${getDayWeek(data.getDay())}, ${data.getDate()}` +
+                                ` de ${getMonth(monthDay)} de ${data.getFullYear()}` +
+                                ` ${data.getHours()}:${data.getMinutes()}`;
 }
 
-mountInfoDate();
+getData();
+
