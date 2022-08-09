@@ -1,4 +1,5 @@
 function getDayWeekText(diaSemana) {
+    let diaSemanaTexto;
     switch (diaSemana) {
         case 0: 
                 diaSemanaTexto = 'Domingo';
@@ -24,15 +25,16 @@ function getDayWeekText(diaSemana) {
         default:
             diaSemanaTexto = '';
     }
+
+    return diaSemanaTexto;
 }
 
 
 const data = new Date('1987-04-25 00:00:00');
 const diaSemana = data.getDay();
+const diaSemanaTexto = getDayWeekText(diaSemana);
 
-let diaSemanaTexto;
-
-
+console.log(diaSemana, diaSemanaTexto);
 
 // if (diaSemana === 0) {
 //   diaSemanaTexto = 'Domingo';  
@@ -53,4 +55,3 @@ let diaSemanaTexto;
 // }
 
 
-console.log(diaSemana, diaSemanaTexto);
