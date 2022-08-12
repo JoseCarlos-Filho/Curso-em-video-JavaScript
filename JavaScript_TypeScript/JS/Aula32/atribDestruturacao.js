@@ -1,32 +1,29 @@
-const verdadeiro = true;
+// let a = 'A'; // B
+// let b = 'B'; // C
+// let c = 'C'; // A
 
-// let nome1 = 'José'; // criando
-// var nome2 = 'Carlos'; // criando
+// const numeros = [b, c, a]; // atribuindo de forma desestruturada.
+// [a, b, c] = numeros;
 
-// if (verdadeiro) {
-//        let nome1 = 'Otavio'; // criando
-//        var nome2 = 'Rogério'; // redeclarando
-//        //console.log(nome1, nome2);
-//        if (verdadeiro) {
-//               var nome2 = 'Pedro'; // redeclarando
-//               let nome1 = 'Qualquer coisa';
-//               //console.log(nome1, nome2);
-//        }
-// }
+// console.log(a, b, c);
 
-// console.log(nome1, nome2);
+// indice        0  1  2  3  4  5  6  7  8
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const primeiroNumero = numeros[0];
+// console.log(primeiroNumero);
+// const [um, dois, tres,  ...resto] = numeros;
+// ...resto é um operador chamado ...rest pega o resto do array
+// O operador ...spread distribui as informações do array. 
+const [um, , tres, , cinco, , sete] = numeros;
+console.log(um, tres, cinco, sete);
+// console.log(resto);
 
-// function falando() {
-//        if (verdadeiro) {
-//               let nome = 'José';
-//               var sobrenome = 'Miranda';
-//        }
-//        console.log(sobrenome);
-// }
 
-// falando();
-
-//var sobrenome = 'José';
-let sobrenome = 'José';
-console.log(sobrenome);
-//let sobrenome = 'José';
+// Arrays dentro de um Array
+const num = [ 
+    [1, 2, 3], 
+    [4, 5, 6], 
+    [7, 8, 9]
+]
+const [lista1, lista2, lista3] = num;
+console.log(lista3[2]);
