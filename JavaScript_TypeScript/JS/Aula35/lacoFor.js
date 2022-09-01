@@ -1,7 +1,7 @@
 // Array de Objetos
 const elementos = [
+  { tag: "h4", texto: "Minha solução" },
   { tag: "p", texto: "Frase 1" },
-  { tag: "h2", texto: "é nóis viado" },
   { tag: "div", texto: "Frase 2" },
   { tag: "footer", texto: "Frase 3" },
   { tag: "section", texto: "Frase 4" },
@@ -17,13 +17,15 @@ function montarElementos(elementos) {
     containerPage.appendChild(tag);
   }
 }
+novoElemento("h1", "numero");
 
 // Adiciona novo elemento no Array de Objetos.
 function novoElemento(tag, texto) {
   elementos.push({ tag, texto });
   console.log(elementos);
-  montarElementos(elementos);
+  return elementos;
+  //return elementos.push({ tag, texto });
+  // montarElementos(elementos);
 }
 
 montarElementos(elementos);
-novoElemento("h1", "numero");
