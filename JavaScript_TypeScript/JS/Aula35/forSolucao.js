@@ -13,7 +13,10 @@ for (let i = 0; i < elements.length; i++) {
   console.log(elements[i]);
   let { tag, texto } = elements[i];
   let criaTag = document.createElement(tag);
-  criaTag.innerHTML = texto;
+  //criaTag.innerText = texto;
+  let criaTexto = document.createTextNode(texto);
+
+  criaTag.appendChild(criaTexto);
   div.appendChild(criaTag);
 }
 
